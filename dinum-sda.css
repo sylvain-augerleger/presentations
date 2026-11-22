@@ -1,0 +1,7 @@
+/* Thème commun DINUM · SDA pour reveal.js */
+.reveal{font-family:'Segoe UI',sans-serif;color:#1d2733}.reveal .slides section{text-align:left}
+.reveal h1{color:#1f3a5f;font-size:1.6em;border-left:6px solid #ffa32b;padding-left:12px;text-transform:none}
+#bandeau{position:fixed;top:0;left:0;right:0;height:46px;background:#1f3a5f;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:0 24px;font:14px 'Segoe UI';z-index:10}
+.cover{background:linear-gradient(135deg,#1f3a5f,#2b5687 60%,#58b3e2 140%)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.kpi{background:#fff;box-shadow:0 2px 8px #0001;border-radius:12px;padding:16px;font-size:.6em;border-top:5px solid var(--c,#1f3a5f)}.kpi b{display:block;font-size:2.4em;color:var(--c,#1f3a5f)}
+.bar{height:14px;background:#e3e6ea;border-radius:7px;margin:4px 0 14px}.bar i{display:block;height:100%;border-radius:7px}

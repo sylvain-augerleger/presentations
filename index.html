@@ -1,0 +1,37 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Bilan du cycle 34</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+<link rel="stylesheet" href="dinum-sda.css">
+</head><body>
+<div id="bandeau"><span><b>DINUM</b> · SDA — Service Développement des Applicatifs</span><img src="logo-dinum-white.svg" height="32"></div>
+<div class="reveal"><div class="slides">
+<section data-background-gradient="linear-gradient(135deg,#1f3a5f,#2b5687 60%,#58b3e2 140%)" style="color:#fff">
+ <img src="logo-dinum-white.svg" height="80"><h1 style="color:#fff;border:0">Bilan du cycle 34</h1><p>Réunion de service SDA · 27 novembre 2026</p></section>
+<section data-markdown><textarea data-template>
+# Le cycle en chiffres
+<div class="kpis"><div class="kpi"><b>148</b>tickets créés</div><div class="kpi" style="--c:#2e9d5b"><b>144</b>tickets résolus</div><div class="kpi" style="--c:#58b3e2"><b>111 j</b>capacité</div><div class="kpi" style="--c:#ffa32b"><b>15</b>projets</div></div>
+---
+# Avancement des projets
+**GouvApp** 85 %<div class="bar"><i style="width:85%;background:#2e9d5b"></i></div>
+**NC Connect** 60 %<div class="bar"><i style="width:60%;background:#58b3e2"></i></div>
+**Emploi NC** 35 %<div class="bar"><i style="width:35%;background:#ffa32b"></i></div>
+---
+# Cycle de vie d'un cycle SDA
+<pre class="mermaid">
+flowchart LR
+  A[Saisie dispos] --> B[Capacité] --> C{Arbitrage CODIR}
+  C -->|retenu| D[Engagement] --> F[Bilan de cycle] --> A
+  C -->|reporté| E[Backlog]
+</pre>
+---
+# Questions et échanges
+Prochaine réunion : fin du cycle 35
+</textarea></section>
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+<script type="module">
+import m from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
+m.initialize({startOnLoad:false});
+Reveal.initialize({hash:true,slideNumber:'c/t',plugins:[RevealMarkdown]}).then(()=>m.run());
+</script></body></html>
