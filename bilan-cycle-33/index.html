@@ -1,0 +1,152 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>SDA · Cycle #33 → #34</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+<link rel="stylesheet" href="../dinum-sda.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head><body>
+<div id="bandeau"><span><b>DINUM</b> · SDA · Cycle #33 → #34</span>
+ <span><a href="#/chiffres">Chiffres</a><a href="#/pacifisc">P@cifisc</a><a href="#/projets">Projets</a><a href="#/sites">Sites</a><a href="#/linux">Linux</a><a href="#/vrac">En vrac</a><a href="#/php">Faille PHP</a><a href="#/cycle34">Cycle 34</a><a href="#/chtech">Chantiers</a>
+ <img src="../logo-dinum-white.svg" height="30" style="margin-left:18px;vertical-align:middle"></span></div>
+<div class="reveal"><div class="slides">
+
+<section data-background-gradient="linear-gradient(135deg,#1f3a5f,#2b5687 60%,#58b3e2 140%)" style="color:#fff">
+ <img src="../logo-dinum-white.svg" height="80">
+ <p style="color:#ffa32b;letter-spacing:.2em;font-size:.6em;margin-bottom:0">DINUM · SDA</p>
+ <h1 style="color:#fff;border:0;padding:0;font-size:2.4em;margin-top:0">Bilan du cycle 33</h1>
+ <p>du 5 octobre au 15 novembre 2026 · lancement du cycle 34</p>
+ <p style="font-size:.55em;opacity:.8">Réunion de service · vendredi 27 novembre 2026</p>
+</section>
+
+<section id="chiffres"><h1>Le cycle en chiffres</h1>
+ <div class="kpis" style="grid-template-columns:repeat(3,1fr)">
+  <div class="kpi"><b>183</b>tickets SDA créés<br><span class="cmp">cycle 32 : 146 · <i>+25 %</i></span></div>
+  <div class="kpi" style="--c:#2e9d5b"><b>280</b>tickets résolus<br><span class="cmp">cycle 32 : 143 · <i>×2</i></span><span class="cmp" style="color:#2e9d5b;font-weight:700">Bravo Maël et Fabrice !</span></div>
+  <div class="kpi" style="--c:#ffa32b"><b>50</b>tickets ouverts en fin de cycle<br><span class="cmp">cycle 32 : 124 · <i>−60 %</i></span></div>
+ </div>
+ <div class="kpis" style="margin-top:18px;grid-template-columns:repeat(3,1fr)">
+  <div class="kpi" style="--c:#c0392b"><b>17</b>incidents de production<br><span class="cmp">cycle 32 : 2 · <i>+15</i></span></div>
+  <div class="kpi"><b>7 229</b>commits (hors robots)<br><span class="cmp">cycle 32 : 3 788 · <i>+91 %</i></span></div>
+  <div class="kpi" style="--c:#2e9d5b"><b>2 202</b>pull requests fusionnées<br><span class="cmp">cycle 32 : 1 409 · <i>+56 %</i></span></div>
+ </div>
+</section>
+
+<section id="pacifisc"><h1>Côté P@cifisc</h1>
+ <div class="kpis" style="grid-template-columns:repeat(2,1fr)">
+  <div class="kpi"><b>104</b>tickets résolus<br><span class="cmp">cycle 32 : 97 · <i>+7 %</i></span></div>
+  <div class="kpi" style="--c:#58b3e2"><b>84</b>tickets créés<br><span class="cmp">cycle 32 : 86 · <i>−2 %</i></span></div>
+ </div>
+ <canvas id="cPac" width="900" height="300" style="margin-top:20px"></canvas>
+</section>
+
+<section id="projets"><h1>Projets du cycle 33</h1>
+ <div class="prog">
+  <div><span>AIGLE</span><div class="bar"><i style="width:100%;background:#2e9d5b"></i></div><em style="color:#2e9d5b">Terminé</em></div>
+  <div><span>Prev'ERP</span><div class="bar"><i style="width:100%;background:#2e9d5b"></i></div><em style="color:#2e9d5b">Terminé</em></div>
+  <div><span>Formulaire d'entrée des voyageurs</span><div class="bar"><i style="width:60%;background:#58b3e2"></i></div><em style="color:#58b3e2">Objectifs atteints · 60 %</em></div>
+  <div><span>NC Connect v3</span><div class="bar"><i style="width:100%;background:#2e9d5b"></i></div><em style="color:#2e9d5b">Terminé</em></div>
+  <div><span>Concours NC</span><div class="bar"><i style="width:75%;background:#58b3e2"></i></div><em style="color:#58b3e2">Objectifs atteints</em></div>
+  <div><span>Don des invendus alimentaires</span><div class="bar"><i style="width:50%;background:#58b3e2"></i></div><em style="color:#58b3e2">Objectifs atteints · 50 %</em></div>
+  <div><span>Suite numérique (étude)</span><div class="bar"><i style="width:100%;background:#2e9d5b"></i></div><em style="color:#2e9d5b">Terminé</em></div>
+  <div><span>GAC et GECCO Mobile</span><div class="bar"><i style="width:90%;background:#ffa32b"></i></div><em style="color:#ffa32b">Partiellement atteints · 90 %</em></div>
+  <div><span>LSU 2027</span><div class="bar"><i style="width:80%;background:#ffa32b"></i></div><em style="color:#ffa32b">Partiellement atteints · 80 %</em></div>
+  <div><span>Registre de l'état civil</span><div class="bar"><i style="width:12%;background:#c0392b"></i></div><em style="color:#c0392b">Reporté</em></div>
+ </div>
+</section>
+
+<section id="sites"><h1>Les Jira SITE reprennent vie</h1>
+ <div class="cols" style="grid-template-columns:1fr 1.4fr">
+  <div class="kpis" style="grid-template-columns:1fr 1fr">
+   <div class="kpi"><b>43</b>tickets créés</div>
+   <div class="kpi" style="--c:#2e9d5b"><b>27</b>tickets résolus</div>
+  </div>
+  <div><canvas id="cSites" width="640" height="340"></canvas></div>
+ </div>
+</section>
+
+<section id="linux"><h1>Poste de développement Linux</h1>
+ <div class="cols">
+  <div class="liste" style="font-size:.7em"><ul>
+   <li>Avoir la <b>même configuration Linux</b> pour tous : agents, prestataires, stagiaires</li>
+   <li>Travailler <b>sans droits d'administrateur</b>, dans une zone « data »</li>
+   <li>Accéder à <b>toutes les URL https</b></li>
+   <li>Atteindre SSH et bases de données via <b>Teleport</b></li>
+   <li>Simplifier l'<b>arrivée des nouveaux</b> \o/</li>
+  </ul></div>
+  <div class="etat">
+   <div style="--c:#2e9d5b"><span>En place</span><p>Christophe DOS SANTOS<br>Ségolène IWA<br>Zoé ROUL</p></div>
+   <div style="--c:#58b3e2"><span>Bientôt</span><p>Emilie BOSSART</p></div>
+   <div style="--c:#c0392b"><span>À régler</span><p>VPN<br><small>pas encore de télétravail</small></p></div>
+  </div>
+ </div>
+</section>
+
+<section id="php"><h1>Fait marquant : la faille PHP</h1>
+ <p class="sous">Alerte CERT-FR du 21/10 : deux failles PHP permettent de prendre la main sur un serveur à distance. Tous nos sites Drupal étaient concernés.</p>
+ <div class="kpis">
+  <div class="kpi" style="--c:#2e9d5b"><b>41</b>sites corrigés et remis en production</div>
+  <div class="kpi"><b>31</b>sites PHP 7 (serveur mutualisé)<br><span class="cmp">en production le 17/11</span></div>
+  <div class="kpi" style="--c:#58b3e2"><b>10</b>sites PHP 8 (conteneurs)<br><span class="cmp">en production le 23/11</span></div>
+  <div class="kpi" style="--c:#ffa32b"><b>12</b>tickets Jira · <b style="display:inline;font-size:1em">~140</b> fils de mails</div>
+ </div>
+ <div class="frise">
+  <div class="ev" style="--c:#c0392b"><b>21/10</b>Alerte CERT-FR</div>
+  <div class="ev"><b>22/10</b>Inventaire, premières protections</div>
+  <div class="ev"><b>23/10</b>Sites derrière Cloudflare</div>
+  <div class="ev"><b>27/10</b>demarches.gouv.nc corrigé</div>
+  <div class="ev" style="--c:#2e9d5b"><b>17/11</b>31 sites PHP 7 corrigés</div>
+  <div class="ev" style="--c:#2e9d5b"><b>23/11</b>10 sites PHP 8 corrigés, envois rouverts</div>
+ </div>
+ <p style="font-size:.6em;margin-top:24px">Merci à <b>Zoé ROUL</b>, <b>Fabrice DANG</b>, <b>Maël ARAMION</b> et <b>Pierre THUPAKO</b> (SIN)</p>
+</section>
+
+<section id="vrac"><h1>En vrac</h1>
+ <div class="cols liste" style="font-size:.6em">
+  <div><h3 style="color:#1f3a5f;font-size:1.1em">Ce qui s'est passé</h3><ul>
+   <li>GitHub : secret scanning suspendu (80 % du budget), le temps de régler les factures et d'affiner</li>
+   <li>15 licences Claude distribuées</li>
+   <li>Arrivées :<ul style="margin:4px 0"><li>Zoé ROUL (sites web)</li><li>Ségolène IWA (Aide énergie)</li><li>Quentin de NANTEUIL (guide du développeur)</li><li>Dami FORTUNAT (Tiarhé)</li></ul></li>
+   <li>Départ : Lucien DELGRANGE (Prev'ERP)</li>
+  </ul></div>
+  <div><h3 style="color:#1f3a5f;font-size:1.1em">Ce qui arrive</h3><ul>
+   <li>30/11 : début du cycle 34, onboardings SAM et BAFA</li>
+   <li>30/11 au 09/12 : formation Security by Design</li>
+   <li>01/12 : arrivée de Steven FONGUE et Jimmy AVAE (fusion des sites)</li>
+   <li>15/12 au 01/01 : gel des mises en production</li>
+   <li>Fin décembre : guide du développeur</li>
+   <li>31/12 : livraison AIGLE</li>
+   <li>Janvier : retour de Lucien DELGRANGE sur la fusion des sites</li>
+  </ul></div>
+ </div>
+</section>
+
+<section id="cycle34"><h1>Cycle 34 : du 30/11 au 10/01</h1>
+ <div class="avanc" style="grid-template-columns:1.45fr 1.3fr 1.1fr;font-size:.55em;white-space:nowrap">
+  <div style="--c:#1f3a5f"><h3>Développements</h3><p>Aide à l'énergie<br>SAM (ACTIONS de Poésie)<br>BAFA / BAFD (brevets d'animateur)<br><b>Recrutement</b> :<br>&nbsp;&nbsp;back-office : avis de vacance de poste<br>&nbsp;&nbsp;front-office : Emploi.nc, espace candidat<br>GAC (actes manquants, MEP)<br>LSU 2027 (référentiel)<br>Formulaire d'entrée des voyageurs</p></div>
+  <div style="--c:#58b3e2"><h3>Technique</h3><p>Emploi.nc : rapatriement DINUM<br>Design system (fin de PrimeNG)<br>LSU : remplacement de Gemini<br>ADF dockerisé et Sydonia en prod<br>Poste de travail Linux standard SDA<br>Signature électronique : POC Prev'ERP</p></div>
+  <div style="--c:#ffa32b"><h3>Cadrages</h3><p>Prev'ERP V2<br>Fusion des sites<br>Intranet<br>NC Connect Pro, ProSanté<br>Outil de suivi des projets</p></div>
+ </div>
+ <p style="font-size:.5em;margin-top:20px"><a href="https://docs.google.com/spreadsheets/d/1VockdmTbNAT2jf_4d957_AWUKnQBOUwPuJZ9jEFPFGo/edit?gid=1136132511#gid=1136132511" target="_blank">Feuille de suivi du cycle 34</a></p>
+</section>
+
+<section id="chtech"><h1>OpenProject : chantiers techniques</h1>
+ <div class="liste" style="font-size:.75em"><ul>
+  <li><b>1 projet par agent</b> (et non 1 agent par projet)</li>
+  <li>Le responsable du projet n'est pas forcément celui qui fait</li>
+  <li>Libre service et / ou affectation selon les urgences et les échéances</li>
+ </ul></div>
+ <p style="font-size:.6em;margin-top:30px"><a href="https://openproject.gouv.nc/projects/chtech/work_packages" target="_blank">openproject.gouv.nc/projects/chtech</a></p>
+</section>
+
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script type="module">
+import m from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
+m.initialize({startOnLoad:false,theme:'base',themeVariables:{primaryColor:'#e8f3fb',primaryBorderColor:'#58b3e2',primaryTextColor:'#1f3a5f',lineColor:'#1f3a5f',cScale0:'#1f3a5f',cScale1:'#58b3e2',cScale2:'#ffa32b',cScale3:'#2e9d5b',cScale4:'#7b5ea7',cScale5:'#c0392b',cScaleLabel0:'#fff',cScaleLabel3:'#fff',cScaleLabel4:'#fff',cScaleLabel5:'#fff'}});
+Reveal.initialize({hash:true,slideNumber:'c/t',width:1280,height:720}).then(()=>{
+ new Chart(document.getElementById('cPac'),{type:'bar',data:{labels:['Tickets créés','Tickets résolus'],datasets:[{label:'Cycle 32',data:[86,97],backgroundColor:'#b9c3cf',borderRadius:4},{label:'Cycle 33',data:[84,104],backgroundColor:'#1f3a5f',borderRadius:4}]},options:{responsive:false,indexAxis:'y',plugins:{legend:{position:'bottom'}},scales:{x:{grid:{color:'#eee'}},y:{grid:{display:false}}}}});
+ new Chart(document.getElementById('cSites'),{type:'bar',data:{labels:['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.'],datasets:[{label:'créés',data:[4,2,2,3,1,1,4,4,1,20,29],backgroundColor:'#58b3e2',borderRadius:4},{label:'résolus',data:[5,0,1,3,2,0,0,0,0,10,21],backgroundColor:'#2e9d5b',borderRadius:4}]},options:{responsive:false,plugins:{legend:{position:'bottom'}},scales:{x:{grid:{display:false}},y:{grid:{color:'#eee'}}}}});
+ const draw=async s=>{const n=[...s.querySelectorAll('pre.mermaid:not([data-processed])')];if(n.length)await m.run({nodes:n})};
+ draw(Reveal.getCurrentSlide());Reveal.on('slidechanged',e=>draw(e.currentSlide));
+});
+</script>
+</body></html>
