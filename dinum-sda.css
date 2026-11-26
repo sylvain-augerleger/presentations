@@ -5,3 +5,36 @@
 .cover{background:linear-gradient(135deg,#1f3a5f,#2b5687 60%,#58b3e2 140%)}
 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.kpi{background:#fff;box-shadow:0 2px 8px #0001;border-radius:12px;padding:16px;font-size:.6em;border-top:5px solid var(--c,#1f3a5f)}.kpi b{display:block;font-size:2.4em;color:var(--c,#1f3a5f)}
 .bar{height:14px;background:#e3e6ea;border-radius:7px;margin:4px 0 14px}.bar i{display:block;height:100%;border-radius:7px}
+
+/* Menu, tableaux, colonnes */
+#bandeau a{color:#fff;text-decoration:none;opacity:.85;margin-left:14px;font-size:13px}#bandeau a:hover{opacity:1;color:#ffa32b}
+.sous{color:#707176;font-size:.5em;margin:0 0 6px}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:.7em;margin-top:20px}
+.menu a{display:flex;gap:14px;align-items:center;background:#fff;border-radius:10px;padding:12px 16px;box-shadow:0 2px 8px #0002;color:#1f3a5f!important;text-decoration:none}
+.menu a:hover{background:#eef6fc}.menu b{font-size:1.6em;color:#ffa32b;width:1.4em}
+.reveal table{font-size:.5em;width:100%;border-collapse:collapse}.reveal table th{background:#1f3a5f;color:#fff;padding:6px 10px;text-align:left}.reveal table td{border-bottom:1px solid #e3e6ea;padding:6px 10px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.liste{font-size:.62em}.liste li{margin-bottom:.35em}
+.cmp{display:block;margin-top:6px;font-size:.85em;color:#707176}.cmp i{font-style:normal;font-weight:700;color:#1f3a5f}
+/* Frise : bande horizontale, points, libellés alternés dessus / dessous */
+.frise{position:relative;display:flex;justify-content:space-between;height:300px;margin:16px 10px 0;font-size:.5em}
+.frise::before{content:'';position:absolute;left:0;right:0;top:50%;height:10px;margin-top:-5px;border-radius:5px;background:linear-gradient(90deg,#c0392b,#ffa32b 35%,#58b3e2 65%,#2e9d5b)}
+.frise .ev{position:relative;flex:1 1 0;text-align:center;color:#1d2733;line-height:1.25}
+.frise .ev::after{content:'';position:absolute;left:50%;top:50%;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;background:#fff;border:5px solid var(--c,#1f3a5f);box-sizing:border-box}
+.frise .ev b{display:block;color:var(--c,#1f3a5f);font-size:1.2em}
+.frise .ev{display:flex;flex-direction:column;justify-content:flex-start;height:100%;padding:0 6px}
+.frise .ev:nth-child(even){justify-content:flex-end}
+/* État d'avancement : pastille de statut + contenu */
+.etat{font-size:.62em}.etat>div{display:grid;grid-template-columns:160px 1fr;gap:18px;align-items:center;padding:14px 0;border-bottom:1px solid #e3e6ea}
+.etat>div:last-child{border:0}.etat span{background:var(--c);color:#fff;font-weight:700;text-align:center;border-radius:20px;padding:6px 0}
+.etat p{margin:0;line-height:1.35}.etat small{color:#707176}
+/* Avancement par statut : colonnes colorées */
+.avanc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;font-size:.55em;margin-top:10px}
+.avanc>div{background:#fff;border-radius:10px;box-shadow:0 2px 8px #0001;border-top:6px solid var(--c);padding:12px 16px}
+.avanc h3{font-size:1em;color:var(--c);margin:0 0 10px;text-transform:none}.avanc h3 b{float:right;font-size:1.6em;line-height:1}
+.avanc p{margin:0;line-height:1.6}
+.note{font-size:.4em;color:#707176;margin-top:24px}
+.reveal pre.mermaid{box-shadow:none;background:none;font-size:.6em;text-align:center}
+/* Liste avec barres de progression */
+.prog{font-size:.55em}.prog>div{display:grid;grid-template-columns:400px 1fr 340px;gap:18px;align-items:center;padding:5px 0}
+.prog .bar{margin:0;height:16px}.prog em{font-style:normal;font-weight:700}
